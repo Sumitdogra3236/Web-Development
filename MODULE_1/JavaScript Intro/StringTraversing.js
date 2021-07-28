@@ -1,11 +1,14 @@
 // .charAt() returns the character at the given index of the string
 // .charCodeAt() method returns the ASCII value of the character
 // parseInt() converts string numbers to integer
-// let str = "Sumit Dogra";
 
-// for(let i = 0; i < str.length; i++){
-//     console.log(str.charCodeAt(i));
-// }
+
+let str = "Sumit Dogra";
+
+for(let i = 0; i < str.length; i++){
+    // console.log(str.charCodeAt(i));
+    process.stdout.write(str[i]);
+}
 
 // for(let i = 0; i < str.length; i++){
 //     processI
@@ -35,9 +38,16 @@
 
 
 
-let str = "1355353232"; // return sum of all the number in the number string
-let sum = 0;
-for(let i = 0; i < str.length; i++){
-    sum += parseInt(str[i]);
-}
-console.log(sum);
+// let str = "1A2"; // return sum of all the number in the string
+// let sum = 0;
+// for(let i = 0; i < str.length; i++){
+//     let char = str[i];
+//     if(char >= 0 && char <= 9){
+//         sum += parseInt(char);
+//     }
+//     else {
+//         sum += str.charCodeAt(i);
+//     }
+
+// }
+// console.log(sum);
