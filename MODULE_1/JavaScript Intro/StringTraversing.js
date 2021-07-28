@@ -57,3 +57,14 @@
 // }
 // console.log(sum);
 
+let str = "sumit dogra";
+let ans = "";
+// for(let i = str.length-1; i >= 0; i--){
+//     ans += str[i];
+// }
+// console.log(ans);
+
+let rev = "";
+for(let i = str.length; i >= 0; i--){
+    
+}
