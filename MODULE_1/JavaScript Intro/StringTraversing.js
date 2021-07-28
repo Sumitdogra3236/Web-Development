@@ -29,25 +29,26 @@
 
 
 
-let str = "135535323210"; // return sum of all the number in the number string
-let sum = 0;
-// for(let i = 0; i < str.length; i++){
-//     sum += parseInt(str[i]);
+// let str = "135535323210"; // return sum of all the number in the number string
+// let sum = 0;
+// // for(let i = 0; i < str.length; i++){
+// //     sum += parseInt(str[i]);
+// // }
+// // console.log(sum);
+
+// for(let i = 0; i < str.length; i+=2){
+//     sum += parseInt(str.substr(i,2));
 // }
 // console.log(sum);
-
-for(let i = 0; i < str.length; i+=2){
-    sum += parseInt(str.substr(i,2));
-}
-console.log(sum);
 
 
 // let str = "1A2"; // return sum of all the number in the string
 // let sum = 0;
 // for(let i = 0; i < str.length; i++){
 //     let char = str[i];
-//     if(char >= 0 && char <= 9){
-//         sum += parseInt(char);
+//     if(char >= 0 && char <= 9){     // if(str.charCodeAt(i) >= 47 && str.charCodeAt(i) <= 57)   // if(!isNaN(str.charAt(i)))
+        
+//     sum += parseInt(char);
 //     }
 //     else {
 //         sum += str.charCodeAt(i);
@@ -55,3 +56,4 @@ console.log(sum);
 
 // }
 // console.log(sum);
+
