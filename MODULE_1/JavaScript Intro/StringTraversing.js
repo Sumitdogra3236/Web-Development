@@ -75,11 +75,11 @@ for(let i = strorg.length-1; i >= 0; i--){
 let ep = str.length;
 let sp = undefined;
 
-// for(let i = str.length-1; i >= 0; i--){
-//    if(i == " " || i == 0){
-//        sp = i;
-//        console.log(str.substring(sp,ep));
-//        ep = i;
-//        sp = undefined;
-//    }
-// }
+for(let i = str.length-1; i >= 0; i--){
+   if(i == " " || i == 0){
+       sp = i;
+       console.log(str.substring(sp,ep));
+       ep = i;
+       sp = undefined;
+   }
+}
