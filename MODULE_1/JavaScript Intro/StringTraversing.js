@@ -57,14 +57,29 @@
 // }
 // console.log(sum);
 
-let str = "sumit dogra";
-let ans = "";
+// let str = "sumit dogra";
+// let ans = "";
 // for(let i = str.length-1; i >= 0; i--){
 //     ans += str[i];
 // }
 // console.log(ans);
 
-let rev = "";
-for(let i = str.length; i >= 0; i--){
-    
+// word by word reverse
+let strorg = "sumit dogra";
+let str = "";
+for(let i = strorg.length-1; i >= 0; i--){
+    str += strorg[i];
 }
+// console.log(str);
+
+let ep = str.length;
+let sp = undefined;
+
+// for(let i = str.length-1; i >= 0; i--){
+//    if(i == " " || i == 0){
+//        sp = i;
+//        console.log(str.substring(sp,ep));
+//        ep = i;
+//        sp = undefined;
+//    }
+// }
