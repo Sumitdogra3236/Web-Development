@@ -111,10 +111,46 @@
 
 // check the string is Palindromic or not.
 // Method : 1
-let str = "namam";
-let revstr = "";
-for(let i = str.length-1; i >= 0; i--){
-    revstr += str[i];
+// let str = "aabaa";
+// let revstr = "";
+// for(let i = str.length-1; i >= 0; i--){
+//     revstr += str[i];
+// }
+
+// if(str == revstr){
+//     console.log("Palindrome");
+// }else{
+//     console.log("Not Palindrome!");
+// }
+
+
+// Method : 2
+let str = "aaaabaaaa";
+
+let sp = 0;
+let ep = str.length-1;
+let flag = 0;
+// for(let sp = 0, ep = str.length-1; sp < ep; sp++, ep--){
+//     if(str[sp] != str[ep]){
+//         flag = 1;
+//         console.log("Not Palindrome");
+//         break;
+//     }
+// }
+// if(flag == 0){
+//     console.log("Palindrome");
+// }
+
+// using while loop
+while(sp < ep){
+    if(str[sp] != str[ep]){
+        console.log("Not Palindrome!");
+        flag = 1;
+        break;
+ 
+    }
+    sp++, ep--;
 }
-
-
+if(flag == 0){
+    console.log("Palindromic");
+}
