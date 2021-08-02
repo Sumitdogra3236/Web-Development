@@ -65,13 +65,13 @@
 // console.log(ans);
 
 // word by word reverse
-let str = "Sumit Dogra";
+// let str = "Sumit Dogra";
 
-let revstr =  "";
-for(let i = str.length-1; i >= 0; i--){
-    revstr += str[i];
-}
-console.log(revstr)
+// let revstr =  "";
+// for(let i = str.length-1; i >= 0; i--){
+//     revstr += str[i];
+// }
+// console.log(revstr)
 // from ending
 
 // let ans ="";
@@ -92,35 +92,29 @@ console.log(revstr)
 // console.log(ans);
 
 
-// from starting
-let 
-ans = "";
-let sp = 0;
-let ep = undefined;
-for(let i = 0; i <= revstr.length; i++){
-    if(revstr[i] == " "){
-        ep = i-1;
-        ans += " " + revstr.substring(sp,ep);
-        sp = i+1;
-    }else if(i == revstr.length-1){
-        ep = i;
-        ans += revstr.substring(sp,ep);
-    }
-}
-console.log(ans);
+//  from starting
+// let 
+// ans = "";
+// let sp = 0;
+// let ep = undefined;
+// for(let i = 0; i <= revstr.length; i++){
+//     if(revstr[i] == " "){
+//         ep = i;
+//         ans = " " + revstr.substring(sp,ep) + ans ;
+//         sp = i+1;
+//     }else if(i == revstr.length-1){
+//         ep = revstr.length;
+//         ans = revstr.substring(sp,ep) + ans;
+//     }
+// }
+// console.log(ans);
 
 // check the string is Palindromic or not.
+// Method : 1
+let str = "namam";
+let revstr = "";
+for(let i = str.length-1; i >= 0; i--){
+    revstr += str[i];
+}
 
-// let str1 = "naman";
 
-// let sp1 = 0;
-// let ep1 = str.length-1;
-
-// while(sp1 < ep1){
-//     if(str1[sp1] != str1[ep1] ){
-//         console.log("Not Palindromic!");``
-//         return;
-//     }
-//     sp1++;
-//     ep1--;
-// }
