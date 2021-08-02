@@ -65,29 +65,30 @@
 // console.log(ans);
 
 // word by word reverse
-let strorg = "Sumit Dogra";
-let str = "";
-for(let i = strorg.length-1; i >= 0; i--){
-    str += strorg[i];
-}
-// console.log(str);
+let str = "Sumit Dogra";
 
-// from ending
-let sp = undefined;
-let ep = str.length;
-
+let revstr =  "";
 for(let i = str.length-1; i >= 0; i--){
-   if(i == " " ){
-       sp = i+1;
-       ans += str.substring(sp,ep);
-       ep = i;
-   }else if(i == 0){
-    sp = 0;   
-    ans += str.substring(sp.ep);
-   }
+    revstr += str[i];
+}
+// console.log(revstr)
+// from ending
+
+let ans ="";
+let sp = undefined;
+let ep = revstr.length;
+
+for(let revstr.length-1; i >= 0; i--){
+
 }
 
-console.log(ans);
+
+
+
+
+
+
+
 
 // check the string is Palindromic or not.
 
@@ -104,5 +105,3 @@ console.log(ans);
 //     sp1++;
 //     ep1--;
 // }
-
-`
