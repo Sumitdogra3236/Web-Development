@@ -1,7 +1,7 @@
 // .charAt() returns the character at the given index of the string
 // .charCodeAt() method returns the ASCII value of the character
 // parseInt() converts string numbers to integer
-
+// process.stdout.write(); -> prints in a single line
 
 // let str = "Sumit Dogra";
 
@@ -65,7 +65,7 @@
 // console.log(ans);
 
 // word by word reverse
-let strorg = "sumit dogra";
+let strorg = "Sumit Dogra";
 let str = "";
 for(let i = strorg.length-1; i >= 0; i--){
     str += strorg[i];
@@ -78,8 +78,26 @@ let sp = undefined;
 for(let i = str.length-1; i >= 0; i--){
    if(i == " " || i == 0){
        sp = i;
-       console.log(str.substring(sp,ep));
+    //    console.log(str.substring(sp,ep));
        ep = i;
        sp = undefined;
    }
+}
+
+
+
+// check the string is Palindromic or not.
+
+let str1 = "naman";
+
+let sp1 = 0;
+let ep1 = str.length-1;
+
+while(sp1 < ep1){
+    if(str1[sp1] != str1[ep1] ){
+        console.log("Not Palindromic!");
+        return;
+    }
+    sp1++;
+    ep1--;
 }
