@@ -71,24 +71,43 @@ let revstr =  "";
 for(let i = str.length-1; i >= 0; i--){
     revstr += str[i];
 }
-// console.log(revstr)
+console.log(revstr)
 // from ending
 
-let ans ="";
-let sp = undefined;
-let ep = revstr.length;
+// let ans ="";
+// let sp = undefined;
+// let ep = revstr.length;
 
-for(let revstr.length-1; i >= 0; i--){
+// for(let i = revstr.length - 1; i >= 0; i-- ){
+//   if(revstr[i] == " "){
+//       sp = i+1;
+//       ans += revstr.substring(sp,ep) +" ";
+//       ep = i;
+//   }else if(i == 0){
+//       sp = 0;
+//       ans += revstr.substring(sp,ep);
+//   }
+// }
 
+// console.log(ans);
+
+
+// from starting
+let 
+ans = "";
+let sp = 0;
+let ep = undefined;
+for(let i = 0; i <= revstr.length; i++){
+    if(revstr[i] == " "){
+        ep = i-1;
+        ans += " " + revstr.substring(sp,ep);
+        sp = i+1;
+    }else if(i == revstr.length-1){
+        ep = i;
+        ans += revstr.substring(sp,ep);
+    }
 }
-
-
-
-
-
-
-
-
+console.log(ans);
 
 // check the string is Palindromic or not.
 
