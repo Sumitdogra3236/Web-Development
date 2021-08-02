@@ -129,7 +129,7 @@ let str = "aaaabaaaa";
 
 let sp = 0;
 let ep = str.length-1;
-let flag = 0;
+let ans = true;
 // for(let sp = 0, ep = str.length-1; sp < ep; sp++, ep--){
 //     if(str[sp] != str[ep]){
 //         flag = 1;
@@ -141,16 +141,24 @@ let flag = 0;
 //     console.log("Palindrome");
 // }
 
-// using while loop
-while(sp < ep){
-    if(str[sp] != str[ep]){
-        console.log("Not Palindrome!");
-        flag = 1;
+for(let  i = 0, j = str.length-1; i < j; i++, j--){
+    if(str[i] != str[j]){
+        ans = false;
         break;
- 
     }
-    sp++, ep--;
 }
-if(flag == 0){
-    console.log("Palindromic");
-}
+
+console.log(ans);
+// using while loop
+// while(sp < ep){
+//     if(str[sp] != str[ep]){
+//         console.log("Not Palindrome!");
+//         flag = 1;
+//         break;
+ 
+//     }
+//     sp++, ep--;
+// }
+// if(flag == 0){
+//     console.log("Palindromic");
+// }
