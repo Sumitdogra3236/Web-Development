@@ -72,33 +72,37 @@ for(let i = strorg.length-1; i >= 0; i--){
 }
 // console.log(str);
 
-let ep = str.length;
+// from ending
 let sp = undefined;
+let ep = str.length;
 
 for(let i = str.length-1; i >= 0; i--){
-   if(i == " " || i == 0){
-       sp = i;
-    //    console.log(str.substring(sp,ep));
+   if(i == " " ){
+       sp = i+1;
+       ans += str.substring(sp,ep);
        ep = i;
-       sp = undefined;
+   }else if(i == 0){
+    sp = 0;   
+    ans += str.substring(sp.ep);
    }
 }
 
-
+console.log(ans);
 
 // check the string is Palindromic or not.
 
-let str1 = "naman";
+// let str1 = "naman";
 
-let sp1 = 0;
-let ep1 = str.length-1;
+// let sp1 = 0;
+// let ep1 = str.length-1;
 
-while(sp1 < ep1){
-    if(str1[sp1] != str1[ep1] ){
-        console.log("Not Palindromic!");
-        return;
-    }
-    sp1++;
-    ep1--;
-}
+// while(sp1 < ep1){
+//     if(str1[sp1] != str1[ep1] ){
+//         console.log("Not Palindromic!");``
+//         return;
+//     }
+//     sp1++;
+//     ep1--;
+// }
 
+`
