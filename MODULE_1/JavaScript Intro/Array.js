@@ -11,6 +11,9 @@
 // for in loop, for(let i in arr), i represent the indxes
 // for of loop, for(let i of arr), of represent the value of indexes
 // String.fromCharCode() -> converts the ascii to character
+// arr.forEach(function(value, idx, Array) -> method implemented on array, which returns value, index and Array.
+
+
 // console.log(arr.length);
 
 // let arr = ["Sumit", 21, 79, 6.7];
