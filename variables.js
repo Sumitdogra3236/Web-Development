@@ -7,7 +7,6 @@
 // let e = 10.22;
 
 // console.log(a,b,c,d,e); // Will be printed with spaces
-// will be printed in new lines
 // console.log(a);
 // console.log(b);
 // console.log(c);
@@ -20,13 +19,13 @@
 // let a = 10;
 // let a = 20;
 
-// reassignation is allowed
+// reassignation is allowed in let
 
 // let a = 10;
 // a = 20;
 // console.log(a);
 
-//both reAssign and reDefine is allowed
+//both reAssign and reDefine is allowed in var
 
 // var a = 10;
 // var a = 20;
@@ -36,7 +35,7 @@
 // a = 20;
 // console.log(a);
 
-// No reAssign and reDefine
+// No reAssign and reDefine in const
 
 // const a = 10;
 // const a = 20;
