@@ -8,7 +8,8 @@
 // .split(" ") -> [converts the string into Array], split the string by space and return an arrya of characters
 // .join("") -> [convert the array to string], joins the array using the given parameter
 // .concat() -> merge two arrays
-
+// for in loop, for(let i in arr), i represent the indxes
+// for of loop, for(let i of arr), of represent the value of indexes
 
 // console.log(arr.length);
 
@@ -30,6 +31,19 @@
 // console.log(arr.join("#"));
 // console.log(arr.join("$")); 
 
-let arr1 = ["a", "b", "c"];
-let arr2 = ["d", "e", "f"];
-console.log(arr1.concat(arr2));
+// let arr1 = ["a", "b", "c"];
+// let arr2 = ["d", "e", "f"];
+// console.log(arr1.concat(arr2));
+
+
+let arr = [5,6,7,8];
+
+// for(let i in arr){      // i represent the indexes
+//     console.log(i);
+//     console.log(arr[i]);
+// }
+
+
+for(let i of arr){          // i represent the value of arr
+    console.log(i);
+}
