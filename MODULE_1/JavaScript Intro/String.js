@@ -53,7 +53,7 @@ let str = "Sumit";
 console.log(str.charAt(1));
 console.log(str.charCodeAt(0));
 
-// console.log(str[1]);
+console.log(str[1]);
 
-// str[0] = "A"; // strings are immutable
-// console.log(str);
+str[0] = "A"; // not allowed -> strings are immutable
+console.log(str);
