@@ -56,3 +56,11 @@
 // for convert the character from the ascii
 console.log(String.fromCharCode("A".charCodeAt() + 1));
 
+
+// Most Important Methods of Array
+
+const arr = [1, 2, 3, 6];   // redecleration is not allowed in const
+arr[2] = 34;    // -> allowed
+console.log(arr);
+arr = [4, 66, 3];   // -> not allowed
+console.log(arr);
