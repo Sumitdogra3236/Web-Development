@@ -69,9 +69,30 @@
 // console.log(arr);
 
 
-let arr = ["a", "b", "c", "d"];
-// for each loop
-arr.forEach(function(value, idx, Array){
-console.log(value, idx, Array);
-})
+// let arr = ["a", "b", "c", "d"];
+//  for each loop
+// arr.forEach(function(value, idx, Array){
+// console.log(value, idx, Array);
+// })
 
+// let arr = ["a","b","c","d"];
+
+// function temp (myarg,myarg2,myarg3) {
+//     console.log(myarg,myarg2,myarg3);
+// }
+// arr.forEach(temp.bind(this, "Hello1", "Hello2", "Hello3"));
+
+
+// self written for each function
+
+let array = ["a", "b", "c", "d"];
+
+function myforeach(array, callbackfn){
+    for(let i in array){
+        callbackfn(array[i], i, array);
+    }
+}
+
+myforeach(array, function(value, idx, array){
+    console.log(value, idx, array);
+})
