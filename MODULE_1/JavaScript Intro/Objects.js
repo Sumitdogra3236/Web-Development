@@ -7,4 +7,8 @@ let person = {
     Phone : "1234567890" ,
     0 : "Hello"
 }
-console.log(person[0]) // when there is numerical key, person.0 fails, must use []
+person["Company"] = "Facebook"; // way to add a key to a object
+person["Git-Hub"] = "https://github.com/Sumitdogra3236"; // way to add a key to a object
+person.gender = "Male";
+// console.log(person[0]) // when there is numerical key, person.0 fails, must use []
+console.log(person)
