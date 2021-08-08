@@ -12,8 +12,9 @@
 // for of loop, for(let i of arr), of represent the value of indexes
 // String.fromCharCode() -> converts the ascii to character
 // arr.forEach(function(value, idx, Array) -> method implemented on array, which returns value, index and Array.
-// arr.map(function(value){return ...})     -> .map() function returns a new array and set the value returned by the function on the idx
-
+// arr.map(function(value, idx, Array){return ...})     -> .map() function returns a new array and set the value returned by the function on the idx
+// arr.slice(si, ei) -> returns the elements from the array from si to ei-1, doesn't perform change in the original array
+// arr.splice(si, how many numbers) -> returns as well as delete the elements from the array from si to number of elements, perform change in the original array.
 // console.log(arr.length);
 
 // let arr = ["Sumit", 21, 79, 6.7];
@@ -112,6 +113,7 @@
 
 let arr = [1,2,3,4];
 
+// console.log(arr.slice(1,3));    // slice() doesn't perform changes in original array
+// console.log(arr.splice(1,2));   // perform change in original array
+// console.log(arr);
 
-
-console.log(arr);
