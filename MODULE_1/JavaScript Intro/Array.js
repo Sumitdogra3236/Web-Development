@@ -111,16 +111,16 @@
 // console.log(newArr);
 
 
-let arr = [1,2,3,4];
-
+let arr = [1,2,3,3,4,5,6];
+let tempArr = [...arr]; // Sparsing an Array(copy only the values of the array)
 // console.log(arr.slice(1,3));    // slice() doesn't perform changes in original array
 // console.log(arr.splice(1,2));   // perform change in original array
 // console.log(arr);
 
-for(let i = 0; i < arr.length; i++){    // delete odd elements from the array
+for(let i = arr.length-1; i >= 0; i--){    // delete odd elements from the array
     if(arr[i] % 2 != 0){
         arr.splice(i,1);
     }
 }
 
-console.log(arr);
+console.log(tempArr);
