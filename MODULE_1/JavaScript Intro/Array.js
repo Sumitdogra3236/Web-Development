@@ -15,6 +15,9 @@
 // arr.map(function(value, idx, Array){return ...})     -> .map() function returns a new array and set the value returned by the function on the idx
 // arr.slice(si, ei) -> returns the elements from the array from si to ei-1, doesn't perform change in the original array
 // arr.splice(si, how many numbers) -> returns as well as delete the elements from the array from si to number of elements, perform change in the original array.
+// arr.filter(function(value, idx, arr)) -> if function return true, value will be added in new Array, if returns false value will not be added in new Array
+
+
 // console.log(arr.length);
 
 // let arr = ["Sumit", 21, 79, 6.7];
@@ -112,15 +115,31 @@
 
 
 let arr = [1,2,3,3,4,5,6];
-let tempArr = [...arr]; // Sparsing an Array(copy only the values of the array)
+// Sparsing an Array
+// let tempArr = [...arr]; // Sparsing an Array(copy only the values of the array)
 // console.log(arr.slice(1,3));    // slice() doesn't perform changes in original array
 // console.log(arr.splice(1,2));   // perform change in original array
 // console.log(arr);
 
-for(let i = arr.length-1; i >= 0; i--){    // delete odd elements from the array
-    if(arr[i] % 2 != 0){
-        arr.splice(i,1);
-    }
-}
+// for(let i = arr.length-1; i >= 0; i--){    // delete odd elements from the array
+//     if(arr[i] % 2 != 0){
+//         arr.splice(i,1);
+//     }
+// }
 
-console.log(tempArr);
+// console.log(arr);
+
+
+// filter() method-> 
+
+arr = arr.filter(function(value){
+    // if(value % 2 == 1){
+    //     return false;   // if false -> no. is not kept in new array
+    // } else{
+    //     return true;    // if true -> no. is kept in new Array
+    // }
+
+    return value % 2 == 0;
+})
+
+console.log(arr);
