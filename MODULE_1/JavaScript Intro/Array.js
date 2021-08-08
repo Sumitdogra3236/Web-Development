@@ -12,7 +12,7 @@
 // for of loop, for(let i of arr), of represent the value of indexes
 // String.fromCharCode() -> converts the ascii to character
 // arr.forEach(function(value, idx, Array) -> method implemented on array, which returns value, index and Array.
-
+// arr.map(function(value){return ...})     -> .map() function returns a new array and set the value returned by the function on the idx
 
 // console.log(arr.length);
 
@@ -84,14 +84,27 @@
 
 // self written for each function
 
-let array = ["a", "b", "c", "d"];
+// let array = ["a", "b", "c", "d"];
 
-function myforeach(array, callbackfn){
-    for(let i in array){
-        callbackfn(array[i], i, array);
-    }
-}
+// function myforeach(array, callbackfn){
+//     for(let i in array){
+//         callbackfn(array[i], i, array);
+//     }
+// }
 
-myforeach(array, function(value, idx, array){
-    console.log(value, idx, array);
+// myforeach(array, function(value, idx, array){
+//     console.log(value, idx, array);
+// })
+
+
+
+let arr =[1,2,3,4];     // add 2 in the each element of arr
+
+// for(let i = 0; i < arr.length; i++){
+//     arr[i] = arr[i] + 2;
+// }
+
+let newArr = arr.map(function(value){
+    return value+2;
 })
+console.log(newArr);
