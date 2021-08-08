@@ -147,7 +147,7 @@
 
 // Array.sort() method-> default method is not reliable in JS
 // let arr = [20, 100];  -> default method fails in this array, 
-// .sort() -> compares the value in string format
+// .sort() -> compares the value in string format, in which character by character comparison happens
 let arr = [-1.11, 2, 34.3, 4, 5, 5.4];  // .sort() will not be applicable to this, use own function
 
 console.log(arr.sort(function(a,b){
