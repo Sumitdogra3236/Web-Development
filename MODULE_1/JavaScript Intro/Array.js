@@ -117,3 +117,10 @@ let arr = [1,2,3,4];
 // console.log(arr.splice(1,2));   // perform change in original array
 // console.log(arr);
 
+for(let i = 0; i < arr.length; i++){    // delete odd elements from the array
+    if(arr[i] % 2 != 0){
+        arr.splice(i,1);
+    }
+}
+
+console.log(arr);
