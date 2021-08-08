@@ -14,4 +14,10 @@ person["Git-Hub"] = "https://github.com/Sumitdogra3236"; // way to add a key to 
 person.gender = "Male";
 // console.log(person[0]) // when there is numerical key, person.0 fails, must use []
 // arr.1 -> dot property cannot be used on the number key
-console.log(person)
+// console.log(person)
+
+// Prototype
+// console.log(Array.prototype);
+Array.prototype.name = "Sumit"; // name is the prototype of the array
+let arr = [1,2,3,4];
+console.log(arr.name);
