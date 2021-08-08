@@ -29,4 +29,13 @@ String.prototype.len = function() {
 
 let str = "Sumit Dogra";
 // str.len();
-console.log(str.len())
+// console.log(str.len())
+
+// Nested Objects
+
+obj = {
+    obj1 : {
+        "name" : "Sumit"
+    }
+}
+console.log(obj.obj1.name);
