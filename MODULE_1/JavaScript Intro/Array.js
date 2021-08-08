@@ -146,8 +146,9 @@
 
 
 // Array.sort() method-> default method is not reliable in JS
-
-let arr = [-1.11, 2, 34.3, 4, 5, 5.4];  // .sort() will not be applicable to this, use own function
+// let arr = [20, 100];  -> default method fails in this array, 
+// .sort() -> compares the value in string format
+// let arr = [-1.11, 2, 34.3, 4, 5, 5.4];  // .sort() will not be applicable to this, use own function
 
 // console.log(arr.sort(function(a,b){
 //     // console.log(a,b);
@@ -163,4 +164,7 @@ let arr = [-1.11, 2, 34.3, 4, 5, 5.4];  // .sort() will not be applicable to thi
 // }));
 
 // .includes() -> returns true or false, if array contain the number it return true otherwise it returns false
-console.log(arr.includes(2));
+// console.log(arr.includes(2));
+
+
+
