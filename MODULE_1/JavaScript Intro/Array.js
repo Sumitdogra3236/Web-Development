@@ -82,7 +82,6 @@
 // }
 // arr.forEach(temp.bind(this, "Hello1", "Hello2", "Hello3"));
 
-
 // self written for each function
 
 let array = ["a", "b", "c", "d"];
