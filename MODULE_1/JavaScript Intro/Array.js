@@ -98,13 +98,20 @@
 
 
 
-let arr =[1,2,3,4];     // add 2 in the each element of arr
+//let arr =[1,2,3,4];     // add 2 in the each element of arr
 
 // for(let i = 0; i < arr.length; i++){
 //     arr[i] = arr[i] + 2;
 // }
 
-let newArr = arr.map(function(value){
-    return value+2;
-})
-console.log(newArr);
+// let newArr = arr.map(function(value){
+//     return value+2;
+// })
+// console.log(newArr);
+
+
+let arr = [1,2,3,4];
+
+
+
+console.log(arr);
