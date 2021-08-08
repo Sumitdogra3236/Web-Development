@@ -16,6 +16,7 @@
 // arr.slice(si, ei) -> returns the elements from the array from si to ei-1, doesn't perform change in the original array
 // arr.splice(si, how many numbers) -> returns as well as delete the elements from the array from si to number of elements, perform change in the original array.
 // arr.filter(function(value, idx, arr)) -> if function return true, value will be added in new Array, if returns false value will not be added in new Array
+// .sort() method -> sort the array, does the sorting in string format,character by character.
 // .includes() -> returns true or false, if array contain the number it return true otherwise it returns false
 
 // console.log(arr.length);
