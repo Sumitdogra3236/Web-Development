@@ -35,7 +35,10 @@ let str = "Sumit Dogra";
 
 obj = {
     obj1 : {
-        "name" : "Sumit"
+        "name" : "Sumit",
+        hello : function(){
+            console.log("Hello from 'hello'");
+        }
     }
 }
-console.log(obj.obj1.name);
+console.log(obj.obj1.hello());
