@@ -1,11 +1,12 @@
 // var has a functional scope
+// let and var has block scope
 
 
 // {
 //     let a = 10;
 //     console.log(a);
 // }
-// console.log(a);     // give error coz, a scope is limited to curly braces.
+// console.log(a);     // give error coz, a scope is limited to curly braces / block.
 
 
 
