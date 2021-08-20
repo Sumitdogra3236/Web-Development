@@ -1,4 +1,4 @@
-// var has a functional scope
+// var has a functional / functioned scope
 // let and var has block scope
 // let is more secure then var
 
@@ -13,9 +13,9 @@
 // {
 //   var a = 10;
 // }
-// console.log(a); // will print a coz var has functional scope
+// console.log(a); // will print a coz var has functional / functioned scope
 
 function abc() {
   var a = 10;
 }
-console.log(a); // give error coz, var has a functional scope
+console.log(a); // give error coz, var has a functional /functioned scope
