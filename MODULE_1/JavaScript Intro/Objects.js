@@ -49,10 +49,10 @@
 
 // Object.keys() funtion -> Traversing the object, returns array of keys
 // Object.values() function -> Travesing the object, returns array of values
-let obj = {
-    1 : "Hello1",
-    2 : "Hello2"
-}
+// let obj = {
+//     1 : "Hello1",
+//     2 : "Hello2"
+// }
 
 // console.log(Object.keys(obj)); // return array of keys of object
 // console.log(Object.values(obj)); // return array of values of object
@@ -66,6 +66,10 @@ let obj = {
 //     console.log(obj[key]);
 // }
 
-for(let i = 0; i < Object.keys(obj).length; i++){
-    console.log(obj[Object.keys(obj)[i]]);
-}
+// for(let i = 0; i < Object.keys(obj).length; i++){
+//     console.log(obj[Object.keys(obj)[i]]);
+// }
+
+
+
+let obj
