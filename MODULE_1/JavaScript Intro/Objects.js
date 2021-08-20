@@ -15,7 +15,7 @@
 // person["Git-Hub"] = "https://github.com/Sumitdogra3236"; // way to add a key to a object
 // person.gender = "Male";
 // console.log(person[0]) // when there is numerical key, person.0 fails, must use []
-// arr.1 -> dot property cannot be used on the number key
+// arr.1 -> dot property cannot be used on the number key, and variables
 // console.log(person)
 
 // Prototype
