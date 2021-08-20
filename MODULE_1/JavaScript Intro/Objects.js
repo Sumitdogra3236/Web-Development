@@ -54,13 +54,18 @@ let obj = {
     2 : "Hello2"
 }
 
-console.log(Object.keys(obj)); // return array of keys of object
-console.log(Object.values(obj)); // return array of values of object
+// console.log(Object.keys(obj)); // return array of keys of object
+// console.log(Object.values(obj)); // return array of values of object
 
 // for (let i of obj) -> of loop doesn't works on obj
 // for (let i in obj) -> in loop works on obj, but returns only keys
 
 // Traversing of Array
-for(let key in obj){
-    console.log(obj[key]);
+
+// for(let key in obj){
+//     console.log(obj[key]);
+// }
+
+for(let i = 0; i < Object.keys(obj).length; i++){
+    console.log(obj[Object.keys(obj)[i]]);
 }
