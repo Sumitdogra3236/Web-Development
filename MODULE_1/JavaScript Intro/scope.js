@@ -1,6 +1,6 @@
 // var has a functional scope
 // let and var has block scope
-
+// let is more secure then var
 
 // {
 //     let a = 10;
