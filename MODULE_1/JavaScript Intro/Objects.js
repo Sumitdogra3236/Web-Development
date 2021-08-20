@@ -95,7 +95,7 @@
 
 // Recursive Method
  
-printKeys(obj);
+// printKeys(obj);
 
 // function printKeys (obj){
 //     for(let key in obj){
@@ -109,3 +109,16 @@ printKeys(obj);
 
 
 // Problem -> Flatten the Object
+
+
+// Problem -> Deep Copy -> Cloning a nested object
+
+let obj = {
+    "hello1" : {},
+    "hello2" : 2
+}
+
+let newobj = {...obj};
+newobj.hello1["hello1.1"] = "VS_Code";  // changes reflected in old obj
+
+console.log(obj)
