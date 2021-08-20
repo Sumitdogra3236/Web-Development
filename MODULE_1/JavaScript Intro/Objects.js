@@ -70,6 +70,21 @@
 //     console.log(obj[Object.keys(obj)[i]]);
 // }
 
-
-
-let obj
+let obj = {
+    obj1 : {
+        "obj1.1" : {}
+    },
+    obj2 : {
+        "obj2.1" : {},
+        "obj2.2" : {}
+    }
+}
+// console.log(typeof(obj["obj1"]))
+for (let key in obj){
+    console.log(key);
+    if(typeof(obj[key]) == "object"){
+        for(let key2 in obj[key]){
+            console.log(key2);
+        }       
+    }
+}
