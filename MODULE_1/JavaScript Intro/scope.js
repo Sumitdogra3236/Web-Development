@@ -1,4 +1,4 @@
-// var has a function scope
+// var has a functional scope
 
 
 // {
@@ -9,7 +9,12 @@
 
 
 
-{
+// {
+//   var a = 10;
+// }
+// console.log(a); // will print a coz var has functional scope
+
+function abc() {
   var a = 10;
 }
-console.log(a); // will print a coz var has function scope
+console.log(a); // give error coz, var has a functional scope
