@@ -1,5 +1,5 @@
 // Methods -> any function defined in an object is known as Method of that object.
-
+// Object.keys() ->  return array of keys of object
 // To declare a object
 // let obj = {};
 // in object, key is also known as property
@@ -22,23 +22,33 @@
 // let arr = [1,2,3,4];
 // console.log(arr.name);
 
-String.prototype.len = function() {
-    // console.log(this.length);
-    return(this.length);
-}
+// String.prototype.len = function() {
+//     // console.log(this.length);
+//     return(this.length);
+// }
 
-let str = "Sumit Dogra";
+// let str = "Sumit Dogra";
 // str.len();
 // console.log(str.len())
 
 // Nested Objects
 
-obj = {
-    obj1 : {
-        "name" : "Sumit",
-        hello : function(){
-            console.log("Hello from 'hello'");
-        }
-    }
+// obj = {
+//     obj1 : {
+//         "name" : "Sumit",
+//         hello : function(){
+//             console.log("Hello from 'hello'");
+//         }
+//     }
+// }
+// console.log(obj.obj1.hello());
+
+
+
+// Object.keys() funtion -> Traversing the object
+let obj = {
+    "Hello1" : 1,
+    "Hello2" : 2
 }
-console.log(obj.obj1.hello());
+
+console.log(Object.keys(obj)); // return array of keys of object
