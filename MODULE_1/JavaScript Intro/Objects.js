@@ -70,6 +70,7 @@
 //     console.log(obj[Object.keys(obj)[i]]);
 // }
 
+// print keys in nested level object
 let obj = {
     obj1 : {
         "obj1.1" : {}
@@ -79,12 +80,28 @@ let obj = {
         "obj2.2" : {}
     }
 }
+
 // console.log(typeof(obj["obj1"]))
-for (let key in obj){
-    console.log(key);
-    if(typeof(obj[key]) == "object"){
-        for(let key2 in obj[key]){
-            console.log(key2);
-        }       
+
+// Iterative Method
+// for (let key in obj){
+//     console.log(key);
+//     if(typeof(obj[key]) == "object"){
+//         for(let key2 in obj[key]){
+//             console.log(key2);
+//         }       
+//     }
+// }
+
+// Recursive Method
+ 
+printKeys(obj);
+
+function printKeys (obj){
+    for(let key in obj){
+        console.log(key);
+        if(typeof(obj[key]) == "object"){
+            printKeys(obj[key]);
+        }   
     }
 }
