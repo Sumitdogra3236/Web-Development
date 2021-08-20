@@ -1,5 +1,7 @@
 // Methods -> any function defined in an object is known as Method of that object.
 // Object.keys() ->  return array of keys of object
+// Object.values(); // return array of values of object
+
 // To declare a object
 // let obj = {};
 // in object, key is also known as property
@@ -45,10 +47,12 @@
 
 
 
-// Object.keys() funtion -> Traversing the object
+// Object.keys() funtion -> Traversing the object, returns array of keys
+// Object.values() function -> Travesing the object, returns array of values
 let obj = {
-    "Hello1" : 1,
-    "Hello2" : 2
+    1 : "Hello1",
+    2 : "Hello2"
 }
 
 console.log(Object.keys(obj)); // return array of keys of object
+console.log(Object.values(obj)); // return array of values of object
