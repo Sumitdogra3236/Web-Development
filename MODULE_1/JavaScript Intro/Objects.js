@@ -71,15 +71,15 @@
 // }
 
 // print keys in nested level object
-let obj = {
-    obj1 : {
-        "obj1.1" : {}
-    },
-    obj2 : {
-        "obj2.1" : {},
-        "obj2.2" : {}
-    }
-}
+// let obj = {
+//     obj1 : {
+//         "obj1.1" : {}
+//     },
+//     obj2 : {
+//         "obj2.1" : {},
+//         "obj2.2" : {}
+//     }
+// }
 
 // console.log(typeof(obj["obj1"]))
 
@@ -97,12 +97,15 @@ let obj = {
  
 printKeys(obj);
 
-function printKeys (obj){
-    for(let key in obj){
-        console.log(key);
-        if(typeof(obj[key]) == "object"){
-            printKeys(obj[key]);
-        }   
-    }
-    // return undefined;
-}
+// function printKeys (obj){
+//     for(let key in obj){
+//         console.log(key);
+//         if(typeof(obj[key]) == "object"){
+//             printKeys(obj[key]);
+//         }   
+//     }
+//     // return undefined;
+// }
+
+
+// Problem -> Flatten the Object
