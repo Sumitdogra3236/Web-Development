@@ -113,12 +113,45 @@
 
 // Problem -> Deep Copy -> Cloning a nested object
 
+// let obj = {
+//     "hello1" : {
+//         "1" : "Hello1.1"
+//     },
+//     "hello2" : 2
+// }
+
+// let newobj = {...obj};
+// newobj.hello1["hello1.1"] = "VS_Code";  // changes reflected in old obj, this is a problem
+    // console.log(obj)
+
+    // Iterative Method
+    // let newobj = {};
+    // for(let key in obj){
+    // if(typeof(obj[key]) == "object"){
+    //         newobj[key] = {};
+    //         for (let key1 in obj[key]) {
+    //           if (typeof obj[key][key1] == "object") {
+    //             newobj[key][key1] = {};
+    //           } else {
+    //             newobj[key][key1] = obj[key][key1];
+    //           }
+    //         }
+
+    // }
+    // else {
+    //     newobj[key] = obj[key];
+    // }
+    // }
+
+    // console.log(newobj);
+
 let obj = {
-    "hello1" : {},
-    "hello2" : 2
-}
+  hello1: {
+    1: "Hello1.1",
+  },
+  hello2: 2,
+};
 
-let newobj = {...obj};
-newobj.hello1["hello1.1"] = "VS_Code";  // changes reflected in old obj
+    // Recursive Method
 
-console.log(obj)
+    
