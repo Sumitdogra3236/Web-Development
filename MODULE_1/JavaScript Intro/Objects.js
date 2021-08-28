@@ -147,11 +147,23 @@
 
 let obj = {
   hello1: {
-    1: "Hello1.1",
+      "Hello1.1" : "Hello from 1"
   },
   hello2: 2,
 };
-
+let newobj = {};
+deepCopy(obj,newobj);
+console.log(newobj);
     // Recursive Method
 
-    
+function deepCopy(obj, newobj){
+    for(let key in obj){
+        if(typeof(obj[key]) == "object"){
+            newobj[key] = {};
+            deepCopy(obj[key]);
+        }
+        else {
+            newobj[key] = obj[key];
+        }
+    }
+}
