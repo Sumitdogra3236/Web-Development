@@ -13,3 +13,10 @@ for(let item in arr){   // item gives the idexes of array
 for(let item of arr){  // gives the item of the array
     console.log(item);
 }
+
+// do-while
+var i = 9;
+do{
+    console.log("current value is: ",i);
+    i++;
+} while(i < 5);
