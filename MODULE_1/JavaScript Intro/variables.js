@@ -44,3 +44,31 @@
 // const a = 10;
 // a = 20;
 // console.log(a);
+
+
+// Operators ->
+
+// Unary
+
+// post-fix operator
+// var a = 2;
+// console.log(a++); // -> 2
+// console.log(a);  //-> 3
+
+// pre-fix operator
+
+// var a = 2;
+// console.log(++a); // -> 3
+// console.log(a); // -> 3
+
+// Shift Operator -> shift the bits
+// 00000...0001000  -> before shifting
+// 00000...0100000  -> after shifting 2 bits from left
+
+var num1 = 8, n = 2;
+// left-shift
+console.log(num1 << n) // -> 32 -> equivalent to 8*4 = 32 
+
+// right-shift
+// 00000....0001000 -> before shifting
+
