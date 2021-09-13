@@ -67,8 +67,10 @@
 
 var num1 = 8, n = 2;
 // left-shift
-console.log(num1 << n) // -> 32 -> equivalent to 8*4 = 32 
+// console.log(num1 << n) // -> 32 -> equivalent to 8 *(2 pow 2) = 32 
 
 // right-shift
 // 00000....0001000 -> before shifting
+// 00000....0000010
 
+console.log(num1 >> n) // -> 2 ->  equaivalent to 8 /(2 pow 2) 
