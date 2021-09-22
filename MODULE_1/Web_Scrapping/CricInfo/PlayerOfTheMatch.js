@@ -24,6 +24,9 @@ const fs = require('fs');
 request(matchlink, callback);
 
 function callback(error, res, html){
-    fs.writeFileSync("temp.html", html);
-}
+ const $ = cheerio.load(html);
+// console.log($(".name-link p").text());
 
+let score = $($(".score-detail .score"[2].name).text());
+console.log(score)
+}
