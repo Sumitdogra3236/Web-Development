@@ -21,12 +21,9 @@ const request = require("request");
 const cheerio = require("cheerio");
 const fs = require('fs');
 
-request(matchlink, callback);
+request(matchlink, function(err, resp, html){
+    // fs.writeFileSync("./temp.html", html);
+})
 
-function callback(error, res, html){
- const $ = cheerio.load(html);
-// console.log($(".name-link p").text());
-
-let score = $($(".score-detail .score"[2].name).text());
-console.log(score)
-}
+const $ = cheerio.load('./temp.html');
+console.log($);
